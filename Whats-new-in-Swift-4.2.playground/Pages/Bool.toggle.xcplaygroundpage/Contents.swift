@@ -9,6 +9,7 @@
  */
 struct Layer {
     var isHidden = false
+    var isDarkMode = true
 }
 
 struct View {
@@ -19,7 +20,10 @@ var view = View()
 
 // Before:
 view.layer.isHidden = !view.layer.isHidden
+//view.layer.isHidden = !view.layer.isDarkMode // BUG! it should be isHidden
 view.layer.isHidden
 
 // Now:
 view.layer.isHidden.toggle()
+view.layer.isHidden.toggle()
+

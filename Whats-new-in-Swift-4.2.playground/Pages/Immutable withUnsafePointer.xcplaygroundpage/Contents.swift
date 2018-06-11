@@ -14,6 +14,8 @@ let (firstByte, secondByte) = withUnsafeBytes(of: x) { ptr in
 String(firstByte, radix: 16)
 String(secondByte, radix: 16)
 
+String(firstByte, radix: 16, uppercase: true)
+
 /*:
- [Table of contents](Table%20of%20contents) • [Previous page](@previous)
+ [Table of contents](Table%20of%20contents) • [Previous page](@previous) • [Next page](@next)
  */

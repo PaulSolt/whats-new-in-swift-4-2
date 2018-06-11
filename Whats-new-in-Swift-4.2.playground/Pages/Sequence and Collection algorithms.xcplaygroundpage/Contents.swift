@@ -10,6 +10,7 @@
  `allSatisfy` nicely complements `contains(where:)`, which can be used to test if any element (or none) satisfies a predicate.
  */
 let digits = 0...9
+//let digits = 0...100    // makes it false!
 
 let areAllSmallerThanTen = digits.allSatisfy { $0 < 10 }
 areAllSmallerThanTen
@@ -17,12 +18,15 @@ areAllSmallerThanTen
 let areAllEven = digits.allSatisfy { $0 % 2 == 0 }
 areAllEven
 
+digits.allSatisfy({ $0 < 10 })
+
+
 /*:
  ## `last(where:)`, `lastIndex(where:)`, and `lastIndex(of:)`
 
  [SE-0204](https://github.com/apple/swift-evolution/blob/master/proposals/0204-add-last-methods.md "Add last(where:) and lastIndex(where:) Methods") adds a `last(where:)` method to `Sequence`, and `lastIndex(where:)` and `lastIndex(of:)` methods to `Collection`.
  */
-let lastEvenDigit = digits.last { $0 % 2 == 0 }
+let lastEvenDigit = digits.last { $0 % 2 == 0 } // Last even number
 lastEvenDigit
 
 let text = "Vamos a la playa"

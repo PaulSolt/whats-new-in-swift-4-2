@@ -7,16 +7,17 @@
  ## Contents
 
  1. [`Bool.toggle`](Bool.toggle)
- 1. [Sequence and Collection algorithms](Sequence%20and%20Collection%20algorithms)
- 1. [Enumerating enum cases](Enumerating%20enum%20cases)
- 1. [Random numbers](Random%20numbers)
- 1. [Hashable redesign](Hashable%20redesign)
- 1. [Conditional conformance enhancements](Conditional%20conformance)
- 1. [Dynamic member lookup](Dynamic%20member%20lookup)
- 1. [`#error` and `#warning`](%23error%20and%20%23warning)
- 1. [`MemoryLayout.offset(of:)`](MemoryLayout.offset)
- 1. [`@inlinable`](inlinable)
- 1. [Immutable `withUnsafePointer`](Immutable%20withUnsafePointer)
+ 2. [Sequence and Collection algorithms](Sequence%20and%20Collection%20algorithms)
+ 3. [Enumerating enum cases](Enumerating%20enum%20cases)
+ 4. [Random numbers](Random%20numbers)
+ 5. [Hashable redesign](Hashable%20redesign)
+ 6. [Conditional conformance enhancements](Conditional%20conformance)
+ 7. [Dynamic member lookup](Dynamic%20member%20lookup)
+ 8. [`#error` and `#warning`](%23error%20and%20%23warning)
+ 9. [`MemoryLayout.offset(of:)`](MemoryLayout.offset)
+ 10. [`@inlinable`](inlinable)
+ 11. [Immutable `withUnsafePointer`](Immutable%20withUnsafePointer)
+ 12. [RemoveAll](RemoveAll)
 
 
  ## Requirements

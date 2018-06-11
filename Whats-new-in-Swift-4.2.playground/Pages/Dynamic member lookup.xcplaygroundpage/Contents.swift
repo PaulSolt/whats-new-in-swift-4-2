@@ -21,7 +21,7 @@ import Darwin
 
 /// The current process's environment.
 ///
-/// - Author: Doug Gregor, https://gist.github.com/DougGregor/68259dd47d9711b27cbbfde3e89604e8
+///: - Author: Doug Gregor, <https://gist.github.com/DougGregor/68259dd47d9711b27cbbfde3e89604e8>
 @dynamicMemberLookup
 struct Environment {
     subscript(dynamicMember name: String) -> String? {
@@ -42,12 +42,14 @@ struct Environment {
 let environment = Environment()
 
 environment.USER
+environment.user
 environment.HOME
 environment.PATH
 
 // Mutations are allowed if the subscript has a setter
 environment.MY_VAR = "Hello world"
 environment.MY_VAR
+environment.MY_VAR = nil // unset
 
 /*:
  This is a big feature that has the potential to change how Swift is used in fundamental ways if misused. By hiding a fundamentally “unsafe” string-based access behind a seemingly “safe” construct, you may give readers of your code the wrong impression that things have been checked by the compiler.
