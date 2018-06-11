@@ -52,6 +52,13 @@ extension Point: Hashable {
         // Ignore distanceFromOrigin for hashing
         hasher.combine(x)
         hasher.combine(y)
+        
+        // Try this bad hash (comment out two previous lines)
+        //        hasher.combine(x ^ y) // Bad Hash
+
+        // Why? It creates values that clash, which is bad for when this hash is used in a Set or Dictionary for uniqueness
+        // Results in same value for (x: 3, y: 4) vs. (x: 4, y: 3)
+        
     }
 }
 

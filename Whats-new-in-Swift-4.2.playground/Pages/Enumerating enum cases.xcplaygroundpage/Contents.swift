@@ -10,6 +10,7 @@ enum Terrain: CaseIterable {
     case forest
     case desert
     case road
+//    case artic    // Add new cases without worrying about bugs
 }
 
 Terrain.allCases
